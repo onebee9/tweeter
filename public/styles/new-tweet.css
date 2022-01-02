@@ -1,0 +1,14 @@
+.new-tweet{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 150px;
+}
+
+.new-tweet form{width: 100%;}
+.new-tweet form textarea, .new-tweet form button{border: 0; outline: 0; -webkit-appearance: none;}
+.new-tweet form textarea{width: 100%; background: none !important; border-bottom: 4px solid #333; margin-bottom: 15px;}
+.new-tweet form button{ color: #fff; padding:5px; background-color: #4051A1;}
+
+.new-tweet form .button-and-counter{display: flex; justify-content: space-between; font-family: 'Bungee'}
