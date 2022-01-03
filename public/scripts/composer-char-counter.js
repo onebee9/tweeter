@@ -5,9 +5,12 @@ $(document).ready(function() {
   
     if (currentLength > totalLength){
       $(".counter").css('cssText', 'color:red');
-      //$( "textarea" ).parent( ".selected" ).css( "background", "yellow" );
+      $('.form-error')
+        .html('<i class="fa fa-exclamation-triangle"></i>&nbsp;Tweet is too long. Consider shortening your tweet.</i>&nbsp;<i class="fa fa-exclamation-triangle"></i>')
+        .slideDown(400);
     }
     else{
+      $('.form-error').slideUp(400);
       $(".counter").css('cssText', 'color:#545149');
     }
 

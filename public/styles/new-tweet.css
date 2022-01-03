@@ -12,3 +12,5 @@
 .new-tweet form button{ color: #fff; padding:5px; background-color: #4051A1;}
 
 .new-tweet form .button-and-counter{display: flex; justify-content: space-between; font-family: 'Bungee'}
+
+.form-error{display:none; border: 2px solid #c0392b; width: 100%; font-size: 20px; padding: 20px; margin-bottom: 10px; font-weight: bold; color:#c0392b}

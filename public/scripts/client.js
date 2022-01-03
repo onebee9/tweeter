@@ -13,7 +13,19 @@ $(document).ready(function () {
     const formData = $(this).serialize();
     let textAreaStatus = $("#tweet-text").val().trim();
 
-    if (textAreaStatus && (textAreaStatus.length <= 140 && textAreaStatus.length > 1)) {
+    if(textAreaStatus.length < 1){
+      $('.form-error')
+        .html('<i class="fa fa-exclamation-triangle"></i>&nbsp;Please enter some text to tweet&nbsp;<i class="fa fa-exclamation-triangle"></i>')
+        .slideDown(400);
+    }
+
+    else if(textAreaStatus.length > 140){
+      $('.form-error')
+        .html('<i class="fa fa-exclamation-triangle"></i>&nbsp;Tweet is too long. Consider shortening your tweet.&nbsp;<i class="fa fa-exclamation-triangle"><i>')
+        .slideDown(400);
+    }
+
+    else{
       //sends tweet to post route for processing + saving
       $.ajax({
         url: "/tweets",
@@ -27,24 +39,6 @@ $(document).ready(function () {
         error: function (response) {
         }
       });
-    } else if (textAreaStatus.length > 140) {
-      $('.form-error').text("too long").css({
-        'border': '1px solid red', 'width': '100%',
-        'font-size': '20px',
-        'padding': '20px',
-        'margin-bottom': '10px',
-        'font-weight': 'bold'
-      }).slideDown("slow");
-    return false;
-    } else if (textAreaStatus.length < 1){
-      $('.form-error').text("empty form").css({
-        'border': '1px solid red', 'width': '100%',
-        'font-size': '20px',
-        'padding': '20px',
-        'margin-bottom': '10px',
-        'font-weight': 'bold'
-      }).slideDown("slow");;
-    return false;
     }    
 });
 //end submit function
