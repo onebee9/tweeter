@@ -33,8 +33,14 @@ main{
     padding: 0 5%;
   }
   nav{
-    background-color:#008c41 !important;
-    background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png") !important;
+    background: none !important;
+  }
+
+  .page-header{
+    margin-top: 0 !important;
+    padding-top: 100px !important;
+    height: auto !important;
+    padding-bottom: 40px;
   }
 }
 
