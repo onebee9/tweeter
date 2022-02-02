@@ -18,4 +18,9 @@ This repository is the starter code for the project: Students will fork and clon
 - Node 5.10.x or above
 
 ## Screenshots
-!["Screenshot of tweet cmpose box"]()
+!["Screenshot of tweet empty state"](https://github.com/onebee9/tweeter/blob/447945c487985692497648fb3171b7fe5522ab96/docs/tweet%20form%20empty%20state.png)
+!["Screenshot of tweet error state"](https://github.com/onebee9/tweeter/blob/447945c487985692497648fb3171b7fe5522ab96/docs/Tweet%20Too%20long%20Error.png)
+!["Screenshot of tweet too long"](https://github.com/onebee9/tweeter/blob/447945c487985692497648fb3171b7fe5522ab96/docs/tweet%20form%20empty%20state.png)
+!["Tablet sized Tweeter page.png"](https://github.com/onebee9/tweeter/blob/447945c487985692497648fb3171b7fe5522ab96/docs/Tablet%20sized%20Tweeter%20page.png)
+
+
