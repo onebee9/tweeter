@@ -3,8 +3,8 @@ nav{
   width: 100vw;
   background-color: #4056A1;
   color: #FFFFFF;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed; /* Sets the navbar to fixed position */
+  top: 0; /* Positions the navbar at the top of the page */
 }
 .nav-container{
   display: flex;
@@ -17,8 +17,10 @@ nav{
   font-family:'bungee';
 }
 
-.right-nav-item{text-align: center; font-size: 16px;}
+.right-nav-item{
+text-align: center; font-size: 16px;
+}
 
- .nav-item {
-  align-self:flex-end;
- }
+.nav-item{
+align-self:flex-end;
+}
