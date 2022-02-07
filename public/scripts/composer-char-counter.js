@@ -13,7 +13,6 @@ $(document).ready(function () {
       $('.form-error').slideUp(400);
       $(".counter").css('cssText', 'color:#545149');
     }
-
     $(".counter").text(totalLength - currentLength);
   });
 });

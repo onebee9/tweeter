@@ -39,6 +39,7 @@ $(document).ready(function () {
         error: function (response) {
         }
       });
+      $(".counter").text(140);
     }
   });
   //end submit function
@@ -62,9 +63,14 @@ $(document).ready(function () {
   loadTweets();
 
   const createTweetElement = function (tweetData) {
-    const imagedisplay = (tweetData.user.avatars && tweetData.user.avatars !== "") ? `<img alt="tweet-avatar" src="${tweetData.user.avatars}">` : `<span class ="fa-solid fa-user-astronaut"> </span>`;
+    
+    //Checks if avatars exist in the users schema, Retrieve users avatar if exists, else assign placeholder image
+    const imagedisplay = (tweetData.user.avatars !== "") ? `<img alt="tweet-avatar" src="${tweetData.user.avatars}">` : `<span class ="fa-solid fa-user-astronaut"> </span>`;
+    
+    // retrieve timestamp
     const timeDisplay = timeago.format(tweetData.created_at);
-
+    
+    //create and append tweet
     const tweet = `<article>
       <header class="articles-header">
         <div class = "profile-details">
